@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { EventDetailsComponent } from './page/event-details/event-details.component';
 
 export const routes: Routes = [
 
@@ -14,7 +15,7 @@ export const routes: Routes = [
     {path:'donateCategory', loadComponent:()=>import('./page/donate-cat/donate-cat.component').then(res=>res.DonateCatComponent)},
     {path:'donate', loadComponent:()=>import('./page/donate/donate.component').then(res=>res.DonateComponent)},
     {path:'Event', loadComponent:()=>import('./page/event/event.component').then(res=>res.EventComponent)},
-    {path:'event-Details', loadComponent:()=>import('./page/event-details/event-details.component').then(res=>res.EventDetailsComponent)},
+    {path:'event-detail', component:EventDetailsComponent},
     {path:'Blog', loadComponent:()=>import('./page/blog/blog.component').then(res=>res.BlogComponent)},
     {path:'BlogDetails', loadComponent:()=>import('./page/blog-details/blog-details.component').then(res=>res.BlogDetailsComponent)},
     {path:'Contact', loadComponent:()=>import('./page/contact/contact.component').then(res=>res.ContactComponent)},
